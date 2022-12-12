@@ -7,6 +7,7 @@ import lombok.ToString;
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.Date;
+
 @Data
 @EqualsAndHashCode
 @ToString
@@ -20,6 +21,10 @@ public class Seller implements Serializable {
     private Date birthDate;
     private Double baseSalary;
     private Department department;
+
+    public Seller() {
+
+    }
 
     public Seller(Integer id, String name, String email, Date birthDate, Double baseSalary, Department department) {
         this.id = id;

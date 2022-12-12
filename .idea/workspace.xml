@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e1a1a30-04ad-46cf-8568-c2ae9dfb7163" name="Changes" comment="DepartmentDao and SellerDao interfaces">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/dao/DepartmentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/dao/SellerDao.java" afterDir="false" />
+    <list default="true" id="8e1a1a30-04ad-46cf-8568-c2ae9dfb7163" name="Changes" comment="SellerDaoJDBC and DaoFactory">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/db/DB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/DbException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/db/DbException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/dao/DaoFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/dao/impl/SellerDaoJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/dao/impl/SellerDaoJDBCImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/entities/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/entities/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/entities/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/entities/Seller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -64,6 +70,9 @@
       <recent name="C:\workspace\demo-dao-jdbc" />
       <recent name="C:\workspace\demo-dao-jdbc\src" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\workspace\demo-dao-jdbc\src\main\java\org\example" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -95,13 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670866544953</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="SellerDaoJDBC and DaoFactory">
+      <created>1670866976751</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1670866976751</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Department entity class" />
     <MESSAGE value="Seller entity class" />
     <MESSAGE value="DepartmentDao and SellerDao interfaces" />
-    <option name="LAST_COMMIT_MESSAGE" value="DepartmentDao and SellerDao interfaces" />
+    <MESSAGE value="SellerDaoJDBC and DaoFactory" />
+    <option name="LAST_COMMIT_MESSAGE" value="SellerDaoJDBC and DaoFactory" />
   </component>
 </project>
