@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e1a1a30-04ad-46cf-8568-c2ae9dfb7163" name="Changes" comment="SellerDaoJDBC and DaoFactory">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/db/DB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/DbException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/db/DbException.java" afterDir="false" />
+    <list default="true" id="8e1a1a30-04ad-46cf-8568-c2ae9dfb7163" name="Changes" comment="FindById implementation">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/dao/DaoFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/dao/impl/SellerDaoJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/dao/impl/SellerDaoJDBCImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/entities/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/entities/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/entities/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/entities/Seller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +26,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="1e4e0b57-6511-48fa-a6d3-5b9f51b17a6d" />
+        <option name="url" value="https://github.com/Anderson0512/demo-dao-jdbc.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -111,7 +118,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670866976751</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="FindById implementation">
+      <created>1670869162471</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670869162471</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -119,6 +133,7 @@
     <MESSAGE value="Seller entity class" />
     <MESSAGE value="DepartmentDao and SellerDao interfaces" />
     <MESSAGE value="SellerDaoJDBC and DaoFactory" />
-    <option name="LAST_COMMIT_MESSAGE" value="SellerDaoJDBC and DaoFactory" />
+    <MESSAGE value="FindById implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="FindById implementation" />
   </component>
 </project>
