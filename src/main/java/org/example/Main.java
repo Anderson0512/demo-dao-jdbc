@@ -29,7 +29,7 @@ public class Main {
         for (Seller sel : list) {
             System.out.println(sel);
         }
-
+/*
         System.out.println("\n=== Test4: insertSeller ===");
 
         Seller newSeller = new Seller(null, "Greg Bulls", "greg@gmail.com", new Date(), 4000.0, new Department(2, null));
@@ -45,6 +45,9 @@ public class Main {
         seller.setDepartment(new Department(4, null));
         sellerDao.update(seller);
         System.out.println("Seller updated: " + seller.getName());
-
+*/
+        System.out.println("\n=== Test6: SellerDelete ===");
+        sellerDao.deleteById(12);
+        System.out.println("Delet Completed");
     }
 }

@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e1a1a30-04ad-46cf-8568-c2ae9dfb7163" name="Changes" comment="insert implementation">
+    <list default="true" id="8e1a1a30-04ad-46cf-8568-c2ae9dfb7163" name="Changes" comment="update implementation">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/dao/impl/SellerDaoJDBCImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/dao/impl/SellerDaoJDBCImpl.java" afterDir="false" />
     </list>
@@ -153,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670874021893</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update implementation">
+      <created>1670874943082</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1670874943082</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -166,6 +174,23 @@
     <MESSAGE value="findByDepartment" />
     <MESSAGE value="findAll implementation" />
     <MESSAGE value="insert implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="insert implementation" />
+    <MESSAGE value="update implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="update implementation" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/model/dao/impl/SellerDaoJDBCImpl.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/model/dao/impl/SellerDaoJDBCImpl.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
