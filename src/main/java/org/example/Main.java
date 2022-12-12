@@ -36,5 +36,15 @@ public class Main {
         sellerDao.insert(newSeller);
         System.out.println("Inserted! New Id is " + newSeller.getId());
 
+        System.out.println("\n=== Test5: SellerUpdate ===");
+        seller = sellerDao.findById(2);
+        seller.setName("Martin Cammeron");
+        seller.setEmail("martin@gmail.com");
+        seller.setBirthDate(new Date());
+        seller.setBaseSalary(4500.0);
+        seller.setDepartment(new Department(4, null));
+        sellerDao.update(seller);
+        System.out.println("Seller updated: " + seller.getName());
+
     }
 }
