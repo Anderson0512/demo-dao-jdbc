@@ -1,6 +1,7 @@
 package org.example;
 
 import org.example.model.dao.DaoFactory;
+import org.example.model.dao.DepartmentDao;
 import org.example.model.dao.SellerDao;
 import org.example.model.entities.Department;
 import org.example.model.entities.Seller;
@@ -10,6 +11,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        /*
         SellerDao sellerDao = DaoFactory.createSellerDao();
         System.out.println("=== Test1: sellerById ===");
         Seller seller = sellerDao.findById(2);
@@ -29,7 +31,7 @@ public class Main {
         for (Seller sel : list) {
             System.out.println(sel);
         }
-/*
+
         System.out.println("\n=== Test4: insertSeller ===");
 
         Seller newSeller = new Seller(null, "Greg Bulls", "greg@gmail.com", new Date(), 4000.0, new Department(2, null));
@@ -45,9 +47,22 @@ public class Main {
         seller.setDepartment(new Department(4, null));
         sellerDao.update(seller);
         System.out.println("Seller updated: " + seller.getName());
-*/
+
         System.out.println("\n=== Test6: SellerDelete ===");
         sellerDao.deleteById(12);
         System.out.println("Delet Completed");
+
+         */
+        DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
+        System.out.println("=== Test1 === DepDao findById()");
+        Department department = departmentDao.findById(1);
+        System.out.println(department);
+
+        System.out.println("\n=== Test2 === DepDao findAll()");
+        List<Department> dep = departmentDao.findAll();
+
+        for (Department depart : dep){
+            System.out.println(depart);
+        }
     }
 }
