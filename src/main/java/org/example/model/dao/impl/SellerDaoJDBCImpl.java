@@ -12,7 +12,12 @@ import java.util.*;
 
 public class SellerDaoJDBCImpl implements SellerDao {
 
-    private Connection conn;
+    private static final String SELECTFIRSTROW = "SELECT seller.*,department.Name as DepName ";
+    private static final String FROMSELLERDEPARTMENT = "FROM  seller INNER JOIN department ";
+    private static final String ONSELLERDEPARTMENTID = "ON seller.DepartmentId = DepartmentId ";
+    private static final String DEPARTMENTID = "DepartmentId";
+
+    private final Connection conn;
 
     public SellerDaoJDBCImpl(Connection connection) {
         conn = connection;
@@ -52,7 +57,6 @@ public class SellerDaoJDBCImpl implements SellerDao {
         } finally {
             DB.closeStatment(st);
         }
-
     }
 
     @Override
@@ -109,9 +113,9 @@ public class SellerDaoJDBCImpl implements SellerDao {
 
         try {
             st = conn.prepareStatement(
-                    "SELECT seller.*,department.Name as DepName "
-                            + "FROM  seller INNER JOIN department "
-                            + "ON seller.DepartmentId = DepartmentId "
+                    SELECTFIRSTROW
+                            + FROMSELLERDEPARTMENT
+                            + ONSELLERDEPARTMENTID
                             + "WHERE seller.Id = ?");
             st.setInt(1, id);
             rs = st.executeQuery();
@@ -147,7 +151,7 @@ public class SellerDaoJDBCImpl implements SellerDao {
     private static Department instantiateDepartment(ResultSet rs) throws SQLException {
         Department dep = new Department();
 
-        dep.setId(rs.getInt("DepartmentId"));
+        dep.setId(rs.getInt(DEPARTMENTID));
         dep.setName(rs.getString("DepName"));
         return dep;
     }
@@ -160,9 +164,9 @@ public class SellerDaoJDBCImpl implements SellerDao {
 
         try {
             st = conn.prepareStatement(
-                    "SELECT seller.*,department.Name as DepName "
-                            + "FROM  seller INNER JOIN department "
-                            + "ON seller.DepartmentId = DepartmentId "
+                    SELECTFIRSTROW
+                            + FROMSELLERDEPARTMENT
+                            + ONSELLERDEPARTMENTID
                             + "order by Name");
             rs = st.executeQuery();
 
@@ -171,11 +175,11 @@ public class SellerDaoJDBCImpl implements SellerDao {
 
 
             while (rs.next()) {
-                Department dep = map.get(rs.getInt("DepartmentId"));
+                Department dep = map.get(rs.getInt(DEPARTMENTID));
                 if (Objects.isNull(dep)) {
 
                     dep = instantiateDepartment(rs);
-                    map.put(rs.getInt("DepartmentId"), dep);
+                    map.put(rs.getInt(DEPARTMENTID), dep);
                 }
 
                 Seller seller = instantiateSeller(rs, dep);
@@ -199,9 +203,9 @@ public class SellerDaoJDBCImpl implements SellerDao {
 
         try {
             st = conn.prepareStatement(
-                    "SELECT seller.*,department.Name as DepName "
-                            + "FROM  seller INNER JOIN department "
-                            + "ON seller.DepartmentId = DepartmentId "
+                    SELECTFIRSTROW
+                            + FROMSELLERDEPARTMENT
+                            + ONSELLERDEPARTMENTID
                             + "WHERE DepartmentId = ? "
                             + "order by Name");
             st.setInt(1, department.getId());
@@ -212,11 +216,11 @@ public class SellerDaoJDBCImpl implements SellerDao {
 
 
             while (rs.next()) {
-                Department dep = map.get(rs.getInt("DepartmentId"));
+                Department dep = map.get(rs.getInt(DEPARTMENTID));
                 if (Objects.isNull(dep)) {
 
                     dep = instantiateDepartment(rs);
-                    map.put(rs.getInt("DepartmentId"), dep);
+                    map.put(rs.getInt(DEPARTMENTID), dep);
                 }
 
                 Seller seller = instantiateSeller(rs, dep);
